@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  data_analyzer:
+    build: .
+    container_name: data_analyzer
+    volumes:
+      - .:/data_analyzer
+    ports:
+      - "8000:8000"
