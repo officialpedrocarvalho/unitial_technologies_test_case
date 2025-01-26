@@ -51,7 +51,7 @@ Before you begin, ensure you have met the following requirements:
 
 4. To stop the containers:
    ```bash
-   docker-compose down
+   docker-compose stop
    ```
 
 ---
@@ -222,14 +222,14 @@ The analysis result will include details like machine IDs, average start/end tim
     "average_start": "07:15:00",
     "average_end": "16:18:49",
     "hours_worked": 40,
-    "fuel_consumed": "12 kWh"
+    "fuel_consumed": "120.55 kWh"
   },
   {
     "machine_id": "38de4d48",
     "average_start": "06:44:17",
     "average_end": "16:39:32",
     "hours_worked": 35,
-    "fuel_consumed": "30 L"
+    "fuel_consumed": "305.60 L"
   }
 ]
 ```
@@ -293,5 +293,7 @@ The response will provide the day with the highest consumption.
 
 - **Machine Registration**: You need to register machines first with the `POST /api/machine` endpoint. After registration, you can run data analysis or get consumption details for these machines.
 - **Analysis and Consumption**: Once the machines are registered, you can analyze the machine data using the `GET /api/machine/analyzes` and `GET /api/machine/highest_consumption_day` endpoints to gather insights like total fuel consumption and the day with the highest consumption.
+- **Consumption**: The endpoint has been created, but the implementation is pending as it requires more time.
+- **Tests**: I’ve added unit tests for a few scenarios of one method as an example, to avoid spending excessive time on writing tests for all methods and cases. Integration tests are also needed to validate the API endpoints.
 
 ---
