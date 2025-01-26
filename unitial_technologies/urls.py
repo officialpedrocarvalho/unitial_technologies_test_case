@@ -1,5 +1,5 @@
 """
-URL configuration for ut_test_case project.
+URL configuration for unitial_technologies project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/

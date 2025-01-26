@@ -294,6 +294,6 @@ The response will provide the day with the highest consumption.
 - **Machine Registration**: You need to register machines first with the `POST /api/machine` endpoint. After registration, you can run data analysis or get consumption details for these machines.
 - **Analysis and Consumption**: Once the machines are registered, you can analyze the machine data using the `GET /api/machine/analyzes` and `GET /api/machine/highest_consumption_day` endpoints to gather insights like total fuel consumption and the day with the highest consumption.
 - **Consumption**: The endpoint has been created, but the implementation is pending as it requires more time.
-- **Tests**: I’ve added unit tests for a few scenarios of one method as an example, to avoid spending excessive time on writing tests for all methods and cases. Integration tests are also needed to validate the API endpoints.
+- **Tests**: I’ve added unit tests for a few scenarios of one method as an example to save time on testing all methods and cases. Integration tests are also needed to validate the API endpoints, but to expedite the process, I validated them using Postman by calling the endpoints with the data from machines.json and data.json on my local machine.
 
 ---
